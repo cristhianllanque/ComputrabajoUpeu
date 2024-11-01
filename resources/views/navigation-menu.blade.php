@@ -15,6 +15,23 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <!-- Menu Links for Forecasting Methods -->
+                    <x-nav-link :href="route('metodo.ingenuo')" :active="request()->routeIs('metodo.ingenuo')">
+                        {{ __('Método Ingenuo') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('metodo.media')" :active="request()->routeIs('metodo.media')">
+                        {{ __('Método de la Media') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('metodo.media_movil')" :active="request()->routeIs('metodo.media_movil')">
+                        {{ __('Método de la Media Móvil Simple') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('metodo.derivada')" :active="request()->routeIs('metodo.derivada')">
+                        {{ __('Método de la Derivada') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('metodo.ingenuo_estacional')" :active="request()->routeIs('metodo.ingenuo_estacional')">
+                        {{ __('Método Ingenuo Estacional') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -141,6 +158,23 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+
+            <!-- Responsive Links for Forecasting Methods -->
+            <x-responsive-nav-link href="{{ route('metodo.ingenuo') }}" :active="request()->routeIs('metodo.ingenuo')">
+                {{ __('Método Ingenuo') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('metodo.media') }}" :active="request()->routeIs('metodo.media')">
+                {{ __('Método de la Media') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('metodo.media_movil') }}" :active="request()->routeIs('metodo.media_movil')">
+                {{ __('Método de la Media Móvil Simple') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('metodo.derivada') }}" :active="request()->routeIs('metodo.derivada')">
+                {{ __('Método de la Derivada') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('metodo.ingenuo_estacional') }}" :active="request()->routeIs('metodo.ingenuo_estacional')">
+                {{ __('Método Ingenuo Estacional') }}
             </x-responsive-nav-link>
         </div>
 
